@@ -34,5 +34,15 @@ window.onload = function () {
     }
 
         }
+}
+// SELECT CATEGORY
+const selectCat = function () {
+    if (chosenCategory === categories [0] {
+        categoryName.innerHTML = "The Chosen Category Is Premier League Football Teams"
     }
-    
+    else if (chosenCategory === categories [1]) {
+        categoryName.innerHTML = "The Chosen Category Is Films"
+    }else if (chosenCategory === categories [2]) {
+        categoryName.innerHTML = "The Chosen Category Is Cities"
+    }
+}
