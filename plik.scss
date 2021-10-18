@@ -1,0 +1,53 @@
+/* Variabes */  
+$orange: #ffa600;
+$green: #c1d72e;
+$blue: #82d2e5;
+$grey:#f3f3f3;
+$white: #fff;
+$base-color:$green ;
+
+/* Mixin's */ 
+
+@mixin transition {
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+@mixin clear {
+  &:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+}
+@mixin box-size {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  
+   @mixin transition {
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  @mixin fade {
+    -moz-transition: all 1s ease-in;
+    -moz-transition:all 0.3s ease-in-out;
+    -webkit-transition:all 0.3s ease-in-out;
+  }
+  
+  @mixin opacity {
+    opacity:0.4;
+    filter:alpha(opacity=40); 
+    @include fade;
+  }
+  @mixin corners ($radius) {
+    -moz-border-radius: $radius;
+    -webkit-border-radius: $radius;
+    border-radius: $radius; 
+    -khtml-border-radius: $radius; 
+  }
+ 
