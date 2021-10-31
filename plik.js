@@ -50,11 +50,13 @@ window.onload = function () {
   var myStickman
   var head
 
+//    GET ELEMENTS
   var showLives = document.getElementById('myLives')
   var showCategory = document.getElementById('scategory')
   var getHint = document.getElementById('hint')
   var showClue = document.getElementById('clue')
 
+  //CREATE ALPHABET UL
   var buttons = function () {
     myButtons = document.getElementById('buttons')
     letters = document.createElement('ul') //LISTY
@@ -82,6 +84,7 @@ window.onload = function () {
     } else if (chosenCategory === categories[3]) {
       categoryName.innerHTML = 'The Chosen Category Is World Land'
     }
+  }
 
     // CREATE GEUSSES ul
     result = function () {
@@ -118,7 +121,7 @@ window.onload = function () {
     // ANIMATE MAN
     var animate = function () {
       var drawMe = lives
-      animate[drawMe()]
+      animate[drawMe]()
     }
     //HANGMAN
     var CanvasRenderingContext2D = () => {
@@ -139,5 +142,32 @@ window.onload = function () {
       CanvasRenderingContext2D.lineTo($pathTox, $pathToy)
       CanvasRenderingContext2D.stroke()
     }
-  }
+    frame1 = function() {
+      draw (0, 150, 150, 150)
+    }
+    frame2 = function() {
+      draw(10, 0, 10, 600)
+    }
+    frame3 = function () {
+      draw(0, 5, 70, 5)
+    }
+    frame4 = function() {
+      draw(60, 5, 60, 15)
+    }
+    torso = function() {
+      draw (60, 36, 60, 70)
+    }
+    rightArm = function() {
+      draw (60, 46, 100, 50)
+    }
+    rightLeg = function () {
+      draw (60, 70, 100, 100)
+    }
+    leftLeg = function () {
+      draw = (60, 70, 20, 100)
+    }
+    animate = [rightLeg, leftLeg]
+
+
 }
+
